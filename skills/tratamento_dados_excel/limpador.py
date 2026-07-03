@@ -2,6 +2,7 @@ import ftfy
 import unidecode as ud
 import json
 import os
+from functools import lru_cache
 
 DICT_PATH = os.path.join(os.path.dirname(__file__), 'dicionario.json')
 
@@ -15,6 +16,7 @@ DICIONARIO_CORRUPCAO = load_dict()
 # Variável global para armazenar anomalias detectadas
 anomalias_detectadas = set()
 
+@lru_cache(maxsize=16384)
 def limpar_texto(texto):
     """
     Limpa e normaliza o texto. Se encontrar 'Ã?' que não foi resolvido pelo dicionário,
