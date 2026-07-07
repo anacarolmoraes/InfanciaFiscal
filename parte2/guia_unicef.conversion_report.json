@@ -1,0 +1,32 @@
+{
+  "input_pdf": "C:\\Users\\anacrm\\Documents\\develop\\github\\InfanciaFiscal\\Guia de Apuração do Gasto Social com a Primeira Infância (GSPI-M).pdf.pdf",
+  "output_md": "C:\\Users\\anacrm\\Documents\\develop\\github\\InfanciaFiscal\\parte2\\guia_unicef.md",
+  "method": "pdfmd",
+  "passed": true,
+  "score": 100,
+  "word_count": 15033,
+  "char_count": 101354,
+  "heading_count": 109,
+  "table_count": 6,
+  "replacement_char_count": 0,
+  "suspicious_char_ratio": 0.0013,
+  "reasons": [],
+  "attempts": [
+    {
+      "method": "pdfmd",
+      "returncode": 0,
+      "stdout_tail": "",
+      "stderr_tail": "u2588\\u2588\\u2591\\u2591\\u2591\\u2591\\u2591\\u2591\\u2591\\u2591\\u2591\\u2591]  60% ETA: 0s  Guia de Apura��o do Gasto Social com a Primeira Inf�ncia (GSPI-M).pdf.pdf[pdf_to_md] [pipeline] Rendering Markdown�\n\n[\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2591\\u2591\\u2591\\u2591\\u2591]  80% ETA: 0s  Guia de Apura��o do Gasto Social com a Primeira Inf�ncia (GSPI-M).pdf.pdf\n[\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2591\\u2591\\u2591]  90% ETA: 0s  Guia de Apura��o do Gasto Social com a Primeira Inf�ncia (GSPI-M).pdf.pdf[pdf_to_md] [pipeline] Writing output file�\n\n[\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588\\u2588] 100% ETA: 0s  Guia de Apura��o do Gasto Social com a Primeira Inf�ncia (GSPI-M).pdf.pdf\n[pdf_to_md] [pipeline] Saved \\u2192 C:\\Users\\anacrm\\Documents\\develop\\github\\InfanciaFiscal\\parte2\\guia_unicef.md\nStats for guia_unicef.md:\n  Words:     15033\n  Headings:  109\n  Tables:    0\n  Lists:     46\nDone. 1 file(s) converted successfully.\n"
+    }
+  ],
+  "dependencies": {
+    "pdfplumber": true,
+    "pypdf": true,
+    "PyPDF2": false,
+    "fitz": true,
+    "pytesseract": true,
+    "pdf2image": true,
+    "PIL": true,
+    "tesseract_binary": true
+  }
+}

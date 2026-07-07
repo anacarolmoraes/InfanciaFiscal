@@ -1,0 +1,58 @@
+{
+  "input_pdf": "C:\\Users\\anacrm\\Documents\\develop\\github\\InfanciaFiscal\\Guia de Apuração do Gasto Social com a Primeira Infância (GSPI-M).pdf.pdf",
+  "output_md": "C:\\Users\\anacrm\\Documents\\develop\\github\\InfanciaFiscal\\Guia de Apuração do Gasto Social com a Primeira Infância (GSPI-M).pdf.md",
+  "method": "ocr",
+  "passed": false,
+  "score": 0,
+  "word_count": 0,
+  "char_count": 0,
+  "heading_count": 0,
+  "table_count": 0,
+  "replacement_char_count": 0,
+  "suspicious_char_ratio": 0.0,
+  "reasons": [
+    "output markdown file was not created",
+    "markdown has fewer than 1000 characters",
+    "markdown has fewer than 150 words",
+    "none of the filename keywords were found in the markdown"
+  ],
+  "attempts": [
+    {
+      "method": "pdfmd",
+      "returncode": 2,
+      "stdout_tail": "",
+      "stderr_tail": "usage: pdfmd [-h] [-o OUTPUT] [--ocr {off,auto,tesseract,ocrmypdf}]\n             [--lang LANG] [--export-images] [--page-breaks] [--preview-only]\n             [--no-progress] [-q] [-v] [--stats] [--no-color] [--version]\n             [INPUT_PDF ...]\npdfmd: error: unrecognized arguments: -- --ocr auto --lang por --stats\n"
+    },
+    {
+      "method": "pdfplumber",
+      "skipped": true,
+      "reason": "pdfplumber is not installed"
+    },
+    {
+      "method": "pypdf",
+      "skipped": true,
+      "reason": "pypdf/PyPDF2 is not installed"
+    },
+    {
+      "method": "ocr",
+      "skipped": true,
+      "reason": "OCR dependencies are not available",
+      "dependencies": {
+        "pdf2image": false,
+        "pytesseract": false,
+        "PIL": false,
+        "tesseract_binary": true
+      }
+    }
+  ],
+  "dependencies": {
+    "pdfplumber": false,
+    "pypdf": false,
+    "PyPDF2": false,
+    "fitz": false,
+    "pytesseract": false,
+    "pdf2image": false,
+    "PIL": false,
+    "tesseract_binary": true
+  }
+}
