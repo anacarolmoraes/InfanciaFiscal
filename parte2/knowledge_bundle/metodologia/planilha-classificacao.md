@@ -22,12 +22,21 @@ Campos essenciais para o classificador:
 * objetivo do programa, quando disponivel;
 * nome ou codigo da acao;
 * finalidade ou descricao da acao, quando disponivel;
-* indicacao GSPI ou nao GSPI;
 * area tematica;
-* subarea tematica;
 * classificacao do GSPI como gasto especifico ou ampliado;
-* ponderador de gasto ampliado;
-* valor do ponderador de gasto ampliado.
+
+No arquivo operacional da Parte 2, esses campos correspondem principalmente a:
+
+* `nomePrograma`;
+* `nomeFuncao`;
+* `nomeSubFuncao`;
+* `nomeAcaoOrcamentaria`;
+* `Area Tematica`;
+* `Gasto E ou NE`.
+
+Nesta etapa, a LLM deve preencher apenas `Area Tematica` e `Gasto E ou NE`.
+
+A coluna `Indicador`, subarea tematica, ponderadores e valores ponderados ficam fora do escopo desta etapa.
 
 # Campos Financeiros
 
@@ -45,3 +54,13 @@ Campos financeiros recomendados:
 # Uso Pelo Classificador
 
 Na ausencia de campos de finalidade ou objetivo, a decisao deve explicitar menor confianca e usar a combinacao de programa, funcao, subfuncao e acao para inferencia.
+
+O arquivo operacional definitivo e `fonte_parte_2.xlsx`.
+
+A aba `municipios_classificados` contem exemplos humanos.
+
+A aba `classificacao_automatizada` contem as linhas a classificar pela IA.
+
+Os exemplos humanos ajudam a calibrar a aplicacao pratica da regra, mas nao prevalecem sobre o Knowledge Bundle.
+
+Confianca, justificativa e divergencias devem ser registradas em log ou arquivo derivado, sem alterar desnecessariamente a planilha original.

@@ -1,0 +1,159 @@
+{
+  "arquivo_operacional": "fonte_parte_2.xlsx",
+  "copia_trabalho": "parte2\\resultados\\fonte_parte_2_trabalho.xlsx",
+  "abas": [
+    "municipios_classificados",
+    "classificacao_automatizada"
+  ],
+  "municipios_classificados": {
+    "linhas_dados": 2956,
+    "colunas": 19,
+    "headers": [
+      "Id",
+      "codigoIbge",
+      "nomeMunicipio",
+      "nomeUnidadeGestora",
+      "nomeOrgao",
+      "nomeFuncao",
+      "nomeSubFuncao",
+      "nomeAcaoOrcamentaria",
+      "nomePrograma",
+      "grupoNaturezaDespesa",
+      "idRubricaDespesa",
+      "nomeRubricaDespesa",
+      "valorEmpenhado",
+      "valorLiquidado",
+      "valorPago",
+      "Área Temática",
+      "Gasto E ou NE",
+      "Indicador",
+      "Primeira Infância"
+    ],
+    "header_area_tematica_detectado": "Área Temática",
+    "campos_requeridos_presentes": {
+      "nomePrograma": true,
+      "nomeFuncao": true,
+      "nomeSubFuncao": true,
+      "nomeAcaoOrcamentaria": true
+    },
+    "campos_saida_presentes": {
+      "Area Tematica": true,
+      "Gasto E ou NE": true
+    },
+    "area_tematica_contagem": {
+      "": 1244,
+      "Assitência Social": 414,
+      "Sáude-materno-Infantil": 508,
+      "não se aplica": 327,
+      "Educação Infantil": 276,
+      "Sanemaneto e agua": 119,
+      "Cultura e Direito de Brincar": 22,
+      "Direito à cidade e Habitação": 36,
+      "Segurança Alimentar": 5,
+      "Politicas dos Direitos da Criança e Familia": 3,
+      "-": 2
+    },
+    "gasto_e_ou_ne_contagem": {
+      "-": 846,
+      "": 727,
+      "Não Específico": 530,
+      "Não específico": 634,
+      "Específico": 219
+    },
+    "combinacoes_area_gasto": {
+      " | -": 517,
+      " | ": 727,
+      "Assitência Social | Não Específico": 161,
+      "Sáude-materno-Infantil | Não específico": 325,
+      "Assitência Social | Não específico": 223,
+      "Sáude-materno-Infantil | Não Específico": 172,
+      "não se aplica | -": 327,
+      "Educação Infantil | Específico": 172,
+      "Sanemaneto e agua | Não Específico": 94,
+      "Cultura e Direito de Brincar | Não Específico": 12,
+      "Direito à cidade e Habitação | Não específico": 12,
+      "Sanemaneto e agua | Não específico": 25,
+      "Cultura e Direito de Brincar | Não específico": 9,
+      "Sáude-materno-Infantil | Específico": 11,
+      "Segurança Alimentar | Não Específico": 3,
+      "Educação Infantil | Não específico": 40,
+      "Segurança Alimentar | Específico": 2,
+      "Educação Infantil | Não Específico": 64,
+      "Direito à cidade e Habitação | Não Específico": 21,
+      "Politicas dos Direitos da Criança e Familia | Não Específico": 3,
+      "Assitência Social | Específico": 30,
+      "Cultura e Direito de Brincar | Específico": 1,
+      "Direito à cidade e Habitação | Específico": 3,
+      "- | -": 2
+    }
+  },
+  "classificacao_automatizada": {
+    "linhas_dados": 7010,
+    "colunas": 18,
+    "headers": [
+      "Id",
+      "codigoIbge",
+      "nomeMunicipio",
+      "nomeUnidadeGestora",
+      "nomeOrgao",
+      "nomeFuncao",
+      "nomeSubFuncao",
+      "nomeAcaoOrcamentaria",
+      "nomePrograma",
+      "grupoNaturezaDespesa",
+      "idRubricaDespesa",
+      "nomeRubricaDespesa",
+      "valorEmpenhado",
+      "valorLiquidado",
+      "valorPago",
+      "Área Temática",
+      "Gasto E ou NE",
+      "Indicador"
+    ],
+    "header_area_tematica_detectado": "Área Temática",
+    "campos_requeridos_presentes": {
+      "nomePrograma": true,
+      "nomeFuncao": true,
+      "nomeSubFuncao": true,
+      "nomeAcaoOrcamentaria": true
+    },
+    "campos_saida_presentes": {
+      "Area Tematica": true,
+      "Gasto E ou NE": true
+    },
+    "lote_piloto": {
+      "arquivo": "parte2\\resultados\\lote_piloto_001.csv",
+      "linhas": 20,
+      "excel_rows": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    "tamanho_lote_recomendado": 20
+  },
+  "artefatos_gerados": [
+    "parte2\\resultados\\preparacao_execucao_resumo.json",
+    "parte2\\resultados\\exemplos_humanos_representativos.csv",
+    "parte2\\resultados\\lote_piloto_001.csv",
+    "parte2\\resultados\\log_classificacao_template.csv",
+    "parte2\\resultados\\normalizacao_labels_inicial.json"
+  ]
+}

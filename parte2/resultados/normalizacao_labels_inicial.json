@@ -1,0 +1,30 @@
+{
+  "observacao": "Mapa inicial para avaliacao; nao altera a planilha original.",
+  "area_tematica_valores_observados": [
+    "",
+    "-",
+    "Assitência Social",
+    "Cultura e Direito de Brincar",
+    "Direito à cidade e Habitação",
+    "Educação Infantil",
+    "Politicas dos Direitos da Criança e Familia",
+    "Sanemaneto e agua",
+    "Segurança Alimentar",
+    "Sáude-materno-Infantil",
+    "não se aplica"
+  ],
+  "gasto_e_ou_ne_valores_observados": [
+    "",
+    "-",
+    "Específico",
+    "Não Específico",
+    "Não específico"
+  ],
+  "normalizacoes_sugeridas": {
+    "Nao especifico": "Nao Especifico",
+    "Assitencia Social": "Assistencia Social",
+    "Sanemaneto e agua": "Saneamento e Agua",
+    "-": "",
+    "nao se aplica": ""
+  }
+}
