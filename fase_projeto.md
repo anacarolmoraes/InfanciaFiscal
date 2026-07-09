@@ -376,6 +376,444 @@ Linhas marcadas para revisao antes de ampliar a classificacao:
 * linha Excel 14: `MANUTENCAO DO FUNDO MUNICIPAL DE SAUDE (FMS)`;
 * linha Excel 16: `GESTAO DA SECRETARIA MUNICIPAL DE CULTURA`.
 
+### 12. Revisao Humana Do Lote Piloto
+
+O usuario revisou as 4 linhas marcadas no lote piloto e registrou a decisao:
+
+```text
+As 4 linhas foram revisadas, e a classificacao ocorreu com conformidade. Pode manter o padrao.
+```
+
+Decisao operacional:
+
+* manter o padrao de classificacao aplicado no lote piloto;
+* nao alterar prompts, workflow ou Knowledge Bundle neste momento;
+* usar o mesmo criterio nos proximos lotes;
+* continuar marcando para revisao humana linhas de baixa confianca, despesas-meio sensiveis e politicas amplas quando houver duvida.
+
+### 13. Execucao Do Lote 002
+
+Com autorizacao do usuario, foi executado o lote 002, mantendo o padrao aprovado no lote piloto.
+
+Escopo:
+
+* aba: `classificacao_automatizada`;
+* linhas Excel: 22 a 41;
+* municipio: Alvorada;
+* total de linhas classificadas: 20.
+
+Arquivos gerados:
+
+* `parte2/resultados/lote_002.csv`;
+* `parte2/resultados/lote_002_classificado.csv`;
+* `parte2/resultados/relatorio_lote_002.md`.
+
+As classificacoes foram aplicadas apenas na copia de trabalho:
+
+* `parte2/resultados/fonte_parte_2_trabalho.xlsx`.
+
+A planilha original `fonte_parte_2.xlsx` nao foi alterada.
+
+A coluna `Indicador` permaneceu sem preenchimento nas linhas do lote 002.
+
+Resultado quantitativo do lote 002:
+
+```text
+linhas classificadas: 20
+Alta confianca: 19
+Media confianca: 1
+Baixa confianca: 0
+linhas para revisao humana: 1
+```
+
+Distribuicao por `Area Tematica`:
+
+```text
+nao se aplica: 13
+Saude Materno-infantil: 6
+Assistencia Social: 1
+```
+
+Distribuicao por `Gasto E ou NE`:
+
+```text
+-: 13
+Nao Especifico: 7
+```
+
+Linha marcada para revisao:
+
+* linha Excel 36: `CONSTRUCAO DO TERMINAL DE ENERGIA FOTOVOLTAICA EM PREDIOS PUBLICOS - FMS`.
+
+Motivo:
+
+* despesa-meio vinculada ao FMS pode sustentar infraestrutura de saude, mas o objeto de energia fotovoltaica e indireto e nao explicita unidade de atendimento.
+
+### 14. Revisao Humana Do Lote 002
+
+O usuario revisou o lote 002 e registrou a decisao:
+
+```text
+Classificacao perfeita.
+```
+
+Decisao operacional:
+
+* aprovar integralmente o lote 002;
+* manter a classificacao da linha Excel 36 como `Saude Materno-infantil` / `Nao Especifico`;
+* manter o padrao vigente para o lote 003.
+
+### 15. Execucao Do Lote 003
+
+Com autorizacao do usuario, foi executado o lote 003, mantendo o padrao aprovado no lote piloto e no lote 002.
+
+Escopo:
+
+* aba: `classificacao_automatizada`;
+* linhas Excel: 42 a 61;
+* municipio: Alvorada;
+* total de linhas classificadas: 20.
+
+Arquivos gerados:
+
+* `parte2/resultados/lote_003.csv`;
+* `parte2/resultados/lote_003_classificado.csv`;
+* `parte2/resultados/relatorio_lote_003.md`.
+
+As classificacoes foram aplicadas apenas na copia de trabalho:
+
+* `parte2/resultados/fonte_parte_2_trabalho.xlsx`.
+
+A planilha original `fonte_parte_2.xlsx` nao foi alterada.
+
+A coluna `Indicador` permaneceu sem preenchimento nas linhas do lote 003.
+
+Resultado quantitativo do lote 003:
+
+```text
+linhas classificadas: 20
+Alta confianca: 16
+Media confianca: 4
+Baixa confianca: 0
+linhas para revisao humana: 4
+```
+
+Distribuicao por `Area Tematica`:
+
+```text
+Educacao Infantil: 6
+Saude Materno-infantil: 6
+nao se aplica: 5
+Assistencia Social: 3
+```
+
+Distribuicao por `Gasto E ou NE`:
+
+```text
+Nao Especifico: 13
+-: 5
+Especifico: 2
+```
+
+Linhas marcadas para revisao:
+
+* linha Excel 43: `AQUISICAO DE VEICULO`;
+* linha Excel 44: `AQUISICAO DE VEICULO`;
+* linha Excel 50: `CONSTRUCAO DO TERMINAL DE ENERGIA FOTOVOLTAICA EM PREDIOS PUBLICOS - FME`;
+* linha Excel 55: `MANUTENCAO DA ALIMENTACAO ESCOLAR`.
+
+Motivo geral:
+
+* casos educacionais genericos ou indiretos, em que a inclusao depende da confirmacao de que a acao abrange a educacao infantil.
+
+### 16. Revisao Humana Do Lote 003
+
+O usuario revisou o lote 003 e registrou a decisao:
+
+```text
+Continue assim, esta perfeito.
+```
+
+Decisao operacional:
+
+* aprovar integralmente o lote 003;
+* manter as classificacoes das linhas Excel 43, 44, 50 e 55;
+* manter o padrao vigente para o lote 004.
+
+### 17. Execucao Do Lote 004
+
+Com autorizacao do usuario, foi executado o lote 004, mantendo o padrao aprovado nos lotes anteriores.
+
+Escopo:
+
+* aba: `classificacao_automatizada`;
+* linhas Excel: 62 a 81;
+* municipio: Alvorada;
+* total de linhas classificadas: 20.
+
+Arquivos gerados:
+
+* `parte2/resultados/lote_004.csv`;
+* `parte2/resultados/lote_004_classificado.csv`;
+* `parte2/resultados/relatorio_lote_004.md`.
+
+As classificacoes foram aplicadas apenas na copia de trabalho:
+
+* `parte2/resultados/fonte_parte_2_trabalho.xlsx`.
+
+A planilha original `fonte_parte_2.xlsx` nao foi alterada.
+
+A coluna `Indicador` permaneceu sem preenchimento nas linhas do lote 004.
+
+Resultado quantitativo do lote 004:
+
+```text
+linhas classificadas: 20
+Alta confianca: 17
+Media confianca: 3
+Baixa confianca: 0
+linhas para revisao humana: 3
+```
+
+Distribuicao por `Area Tematica`:
+
+```text
+nao se aplica: 8
+Assistencia Social: 5
+Educacao Infantil: 3
+Saude Materno-infantil: 2
+Saneamento e Agua: 1
+```
+
+Distribuicao por `Gasto E ou NE`:
+
+```text
+Nao Especifico: 11
+-: 8
+Especifico: 1
+```
+
+Linhas marcadas para revisao:
+
+* linha Excel 69: `MANUTENCAO DO TRANSPORTE ESCOLAR - FUNDEB 30%`;
+* linha Excel 72: `MANUTENCAO DO TRANSPORTE ESCOLAR`;
+* linha Excel 77: `MANUTENCAO DO ATERRO SANITARIO`.
+
+Motivo geral:
+
+* casos de beneficio indireto ou enquadramento por objeto da acao, nao por funcao/subfuncao explicita.
+
+### 18. Execucao Do Lote 005
+
+Com autorizacao do usuario, foi executado o lote 005, mantendo o padrao aprovado nos lotes anteriores.
+
+Escopo:
+
+* aba: `classificacao_automatizada`;
+* linhas Excel: 82 a 101;
+* municipio: Alvorada;
+* total de linhas classificadas: 20.
+
+Arquivos gerados:
+
+* `parte2/resultados/lote_005.csv`;
+* `parte2/resultados/lote_005_classificado.csv`;
+* `parte2/resultados/relatorio_lote_005.md`.
+
+As classificacoes foram aplicadas apenas na copia de trabalho:
+
+* `parte2/resultados/fonte_parte_2_trabalho.xlsx`.
+
+A planilha original `fonte_parte_2.xlsx` nao foi alterada.
+
+A coluna `Indicador` permaneceu sem preenchimento nas linhas do lote 005.
+
+Resultado quantitativo do lote 005:
+
+```text
+linhas classificadas: 20
+Alta confianca: 15
+Media confianca: 5
+Baixa confianca: 0
+linhas para revisao humana: 5
+```
+
+Distribuicao por `Area Tematica`:
+
+```text
+Saude Materno-infantil: 5
+Educacao Infantil: 5
+nao se aplica: 6
+Assistencia Social: 2
+Saneamento e Agua: 1
+Protecao dos Direitos da Crianca e da Familia: 1
+```
+
+Distribuicao por `Gasto E ou NE`:
+
+```text
+Nao Especifico: 12
+-: 6
+Especifico: 2
+```
+
+Linhas marcadas para revisao:
+
+* linha Excel 84: `GESTAO DA SECRETARIA MUNICIPAL DE POLITICAS PARA MULHERES`;
+* linha Excel 86: `MANUTENCAO DA ALIMENTACAO ESCOLAR`;
+* linha Excel 89: `MANUTENCAO DO FUNDO MUNICIPAL DE EDUCACAO - FME`;
+* linha Excel 90: `MANUTENCAO DOS SERVICOS DE LIMPEZA PUBLICA`;
+* linha Excel 91: `MANUTENCAO DO TRANSPORTE ESCOLAR`.
+
+Motivo geral:
+
+* casos de beneficio indireto ou area ampla sem publico-alvo explicitado.
+
+### 19. Revisao Humana Dos Lotes 004 E 005
+
+O usuario revisou os lotes 004 e 005 e registrou a decisao:
+
+```text
+Perfeito, pode continuar.
+```
+
+Decisao operacional:
+
+* aprovar integralmente o lote 004;
+* aprovar integralmente o lote 005;
+* manter as classificacoes das linhas inicialmente marcadas para revisao nesses lotes;
+* manter o padrao vigente para o lote 006.
+
+### 20. Execucao Do Lote 006
+
+Com autorizacao do usuario, foi executado o lote 006, mantendo o padrao aprovado nos lotes anteriores.
+
+Escopo:
+
+* aba: `classificacao_automatizada`;
+* linhas Excel: 102 a 121;
+* municipio: Alvorada;
+* total de linhas classificadas: 20.
+
+Arquivos gerados:
+
+* `parte2/resultados/lote_006.csv`;
+* `parte2/resultados/lote_006_classificado.csv`;
+* `parte2/resultados/relatorio_lote_006.md`.
+
+As classificacoes foram aplicadas apenas na copia de trabalho:
+
+* `parte2/resultados/fonte_parte_2_trabalho.xlsx`.
+
+A planilha original `fonte_parte_2.xlsx` nao foi alterada.
+
+A coluna `Indicador` permaneceu sem preenchimento nas linhas do lote 006.
+
+Resultado quantitativo do lote 006:
+
+```text
+linhas classificadas: 20
+Alta confianca: 17
+Media confianca: 3
+Baixa confianca: 0
+linhas para revisao humana: 3
+```
+
+Distribuicao por `Area Tematica`:
+
+```text
+nao se aplica: 8
+Educacao Infantil: 4
+Assistencia Social: 4
+Saude Materno-infantil: 2
+Protecao dos Direitos da Crianca e da Familia: 2
+```
+
+Distribuicao por `Gasto E ou NE`:
+
+```text
+Nao Especifico: 9
+-: 8
+Especifico: 3
+```
+
+Linhas marcadas para revisao:
+
+* linha Excel 110: `MANUTENCAO DO FUNDO MUNICIPAL DE EDUCACAO - FME`;
+* linha Excel 113: `GESTAO DA SECRETARIA MUNICIPAL DE POLITICAS PARA MULHERES`;
+* linha Excel 121: `MANUTENCAO DO CONSELHO TUTELAR`.
+
+Motivo geral:
+
+* casos de beneficio ampliado ou despesa-meio sem publico-alvo exclusivo.
+
+### 21. Execucao Automatica Supervisionada Completa
+
+O usuario autorizou a continuidade sem validacao manual por lote, apos confirmar que a classificacao vinha sendo executada de forma adequada.
+
+Foi adotado o modo automatico supervisionado:
+
+* aplicar os padroes estabilizados nos lotes iniciais;
+* classificar todas as linhas restantes da aba `classificacao_automatizada`;
+* preencher apenas `Area Tematica` e `Gasto E ou NE`;
+* manter `Indicador` fora do escopo;
+* preservar a planilha original `fonte_parte_2.xlsx`;
+* registrar confianca, justificativa e revisao humana em log separado.
+
+Foram criados:
+
+* `parte2/workflow/classificar_restante_supervisionado.py`;
+* `parte2/resultados/classificacao_automatica_supervisionada_log.csv`;
+* `parte2/resultados/classificacao_automatica_supervisionada_resumo.json`;
+* `parte2/resultados/relatorio_classificacao_automatica_supervisionada.md`.
+
+A execucao foi aplicada somente na copia de trabalho:
+
+* `parte2/resultados/fonte_parte_2_trabalho.xlsx`.
+
+Resultado da execucao automatica supervisionada:
+
+```text
+linhas ja preenchidas antes da execucao: 120
+linhas aplicadas nesta execucao: 6890
+total de linhas de dados da aba: 7010
+Indicador preenchido/alterado nesta execucao: 0
+```
+
+Distribuicao por `Area Tematica` nas 6890 linhas aplicadas:
+
+```text
+nao se aplica: 3471
+Saude Materno-infantil: 1724
+Assistencia Social: 1010
+Educacao Infantil: 509
+Saneamento e Agua: 114
+Protecao dos Direitos da Crianca e da Familia: 60
+Seguranca Alimentar: 2
+```
+
+Distribuicao por `Gasto E ou NE` nas 6890 linhas aplicadas:
+
+```text
+-: 3471
+Nao Especifico: 2958
+Especifico: 461
+```
+
+Distribuicao por confianca:
+
+```text
+Alta: 6332
+Media: 558
+Baixa: 0
+```
+
+Linhas marcadas para revisao humana:
+
+```text
+558
+```
+
 ## Estado Atual
 
 O projeto esta com:
@@ -391,36 +829,48 @@ O projeto esta com:
 * exemplos humanos representativos extraidos;
 * lote piloto de 20 linhas executado e aplicado apenas na copia de trabalho;
 * relatorio do lote piloto criado;
-* necessidade de revisar 4 linhas do lote piloto antes de expandir a classificacao.
+* 4 linhas do lote piloto revisadas pelo usuario e aprovadas como conformes;
+* padrao do lote piloto autorizado para continuidade;
+* lote 002 executado, aplicado na copia de trabalho e documentado;
+* lote 002 revisado pelo usuario e aprovado integralmente;
+* lote 003 executado, aplicado na copia de trabalho e documentado;
+* lote 003 revisado pelo usuario e aprovado integralmente;
+* lote 004 executado, aplicado na copia de trabalho e documentado;
+* lote 004 revisado pelo usuario e aprovado integralmente;
+* lote 005 executado, aplicado na copia de trabalho e documentado;
+* lote 005 revisado pelo usuario e aprovado integralmente;
+* lote 006 executado, aplicado na copia de trabalho e documentado;
+* lote 006 mantido como ultimo lote manual/supervisionado antes da execucao automatica;
+* execucao automatica supervisionada realizada para as 6890 linhas restantes;
+* aba `classificacao_automatizada` completamente classificada na copia de trabalho;
+* `Indicador` mantido fora do escopo e sem preenchimento pela execucao automatica;
+* log consolidado criado com 558 linhas marcadas para revisao humana posterior.
 
 ## Proximo Passo Recomendado
 
-Revisar qualitativamente as 4 linhas marcadas no lote piloto antes de expandir a classificacao para os proximos lotes.
+Realizar validacao por amostragem e por excecao da classificacao completa.
 
 Etapa recomendada agora:
 
-1. abrir `parte2/resultados/relatorio_lote_piloto_001.md`;
-2. revisar as linhas Excel 5, 9, 14 e 16;
-3. decidir se os criterios usados para despesas-meio de educacao, politicas para mulheres, gestao geral de saude e gestao geral de cultura devem ser mantidos;
-4. se necessario, ajustar prompts/workflow ou registrar regra operacional complementar;
-5. atualizar `fase_projeto.md`;
-6. somente depois, executar o proximo lote.
+1. revisar o arquivo `parte2/resultados/relatorio_classificacao_automatica_supervisionada.md`;
+2. filtrar `parte2/resultados/classificacao_automatica_supervisionada_log.csv` por `Requer revisao humana = Sim`;
+3. revisar uma amostra das linhas de alta confianca;
+4. revisar prioritariamente as 558 linhas marcadas para revisao humana;
+5. se necessario, ajustar regras ou corrigir casos pontuais na copia de trabalho;
+6. produzir relatorio final de validacao.
 
 ## Passo Depois Disso
 
-Depois da revisao do lote piloto, executar a classificacao em lotes sucessivos.
+Depois da validacao por amostragem e excecao, consolidar a entrega final da Parte 2.
 
 Sugestao de abordagem:
 
-1. usar tamanho de lote inicial de 20 linhas;
-2. classificar a aba `classificacao_automatizada` em lotes sucessivos;
-3. preencher apenas `Area Tematica` e `Gasto E ou NE` na copia de trabalho;
-4. manter `Indicador` sem classificacao nesta etapa;
-5. gerar log de confianca/justificativa separado;
-6. revisar linhas de baixa confianca ou marcadas para revisao humana;
-7. avaliar concordancia quando houver referencia humana para os municipios de teste;
-8. produzir relatorio de divergencias;
-9. atualizar `fase_projeto.md` ao fim de cada etapa operacional.
+1. preservar `fonte_parte_2.xlsx` como arquivo original;
+2. usar `parte2/resultados/fonte_parte_2_trabalho.xlsx` como arquivo classificado;
+3. validar amostras por municipio e por area tematica;
+4. revisar excecoes marcadas no log consolidado;
+5. produzir relatorio final da classificacao automatica supervisionada;
+6. atualizar `fase_projeto.md` ao fim da validacao.
 
 ## Observacao Para Nova Conversa
 

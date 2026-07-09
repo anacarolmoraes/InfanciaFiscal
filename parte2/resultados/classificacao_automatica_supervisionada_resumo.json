@@ -1,0 +1,43 @@
+{
+  "workbook": "parte2\\resultados\\fonte_parte_2_trabalho.xlsx",
+  "sheet": "classificacao_automatizada",
+  "linhas_ja_preenchidas_antes": 120,
+  "linhas_aplicadas": 6890,
+  "linhas_ignoradas": 0,
+  "indicador_nao_vazio_nas_linhas_aplicadas": 0,
+  "distribuicao_area": {
+    "nao se aplica": 3471,
+    "Educacao Infantil": 509,
+    "Assistencia Social": 1010,
+    "Saude Materno-infantil": 1724,
+    "Protecao dos Direitos da Crianca e da Familia": 60,
+    "Saneamento e Agua": 114,
+    "Seguranca Alimentar": 2
+  },
+  "distribuicao_gasto": {
+    "-": 3471,
+    "Nao Especifico": 2958,
+    "Especifico": 461
+  },
+  "distribuicao_confianca": {
+    "Alta": 6332,
+    "Media": 558
+  },
+  "distribuicao_revisao": {
+    "Nao": 6332,
+    "Sim": 558
+  },
+  "distribuicao_municipio": {
+    "Alvorada": 312,
+    "Araguaçu": 1109,
+    "Cariri do Tocantins": 510,
+    "Figueirópolis": 769,
+    "Formoso do Araguaia": 949,
+    "Gurupi": 1174,
+    "Oliveira de Fátima": 375,
+    "Paranã": 604,
+    "Santa Rita do Tocantins": 702,
+    "Sucupira": 386
+  },
+  "log": "parte2\\resultados\\classificacao_automatica_supervisionada_log.csv"
+}

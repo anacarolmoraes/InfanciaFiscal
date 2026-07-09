@@ -72,7 +72,7 @@ Linhas marcadas para revisao humana:
 4
 ```
 
-## Linhas Que Requerem Revisao
+## Linhas Revisadas
 
 * Linha Excel 5: `MANUTENCAO DO FUNDO MUNICIPAL DE EDUCACAO - FME`.
   * Motivo: despesa-meio de educacao em administracao geral, sem mencao direta a educacao infantil.
@@ -83,8 +83,20 @@ Linhas marcadas para revisao humana:
 * Linha Excel 16: `GESTAO DA SECRETARIA MUNICIPAL DE CULTURA`.
   * Motivo: area de cultura tem regra restritiva para despesas-meio e a linha nao explicita primeira infancia.
 
+## Revisao Humana
+
+As 4 linhas marcadas para revisao humana foram revisadas pelo usuario.
+
+Decisao registrada:
+
+```text
+A classificacao ocorreu com conformidade. O padrao aplicado no lote piloto deve ser mantido.
+```
+
+Assim, os criterios usados para despesas-meio e politicas amplas no lote piloto ficam aprovados como padrao operacional para os proximos lotes, sem necessidade de ajuste imediato nos prompts, workflow ou Knowledge Bundle.
+
 ## Observacao Metodologica
 
-O lote piloto indica que o protocolo esta operacional, mas tambem revela que a classificacao em lote precisa manter trilha de revisao para despesas-meio e politicas amplas.
+O lote piloto indica que o protocolo esta operacional. A revisao humana confirmou conformidade nas 4 linhas inicialmente marcadas para revisao.
 
-Antes de expandir para os proximos lotes, recomenda-se revisar as 4 linhas marcadas acima e decidir se os criterios aplicados devem ser mantidos como padrao.
+O proximo passo recomendado e expandir a classificacao para novo lote, mantendo trilha de revisao para linhas de baixa confianca, despesas-meio e politicas amplas.

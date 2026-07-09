@@ -2,6 +2,14 @@
 
 Esta pasta contem os artefatos entregaveis para uso de um classificador especializado baseado em LLM para a classificacao de acoes orcamentarias segundo o GSPI-M.
 
+Para uso por cliente final, consulte primeiro o README principal do repositorio:
+
+```text
+README.md
+```
+
+Ele explica instalacao, formato da planilha de entrada, comandos de execucao, arquivos de resultado e exemplos de prompts para uso com Codex.
+
 ## Arquitetura Do Experimento
 
 O experimento separa tres camadas:
@@ -19,7 +27,7 @@ O bundle define as regras. O Excel fornece exemplos e casos-alvo. Os prompts tor
 * `manuals/`: manuais de operacao humana e da LLM.
 * `prompts/`: prompts padronizados de classificacao, avaliacao e revisao.
 * `workflow/`: fluxo operacional de classificacao e avaliacao.
-* `municipios_base/`: exemplos humanos de referencia.
+* `municipios_base/`: exemplos humanos de referencia e base expandida em XLSX.
 * `resultados/`: saidas de classificacao e avaliacao.
 
 ## Arquivo Operacional
@@ -36,6 +44,27 @@ Ele contem:
 * `classificacao_automatizada`: linhas que a IA devera classificar.
 
 Nesta etapa, devem ser preenchidas apenas as colunas `Area Tematica` e `Gasto E ou NE`. A coluna `Indicador` fica fora do escopo.
+
+## Expansao De Municipios-Base
+
+Para adicionar novos exemplos humanos revisados, use a skill:
+
+```text
+skills/gspi-municipios-base/
+```
+
+O fluxo recomendado e:
+
+```text
+criar modelo XLSX -> preencher novos exemplos -> validar -> expandir base -> sincronizar com workbook de classificacao
+```
+
+Arquivos principais:
+
+```text
+parte2/modelos/modelo_municipios_base.xlsx
+parte2/municipios_base/municipios_base_expandido.xlsx
+```
 
 ## Nota Sobre Metodologia Proprietaria
 
